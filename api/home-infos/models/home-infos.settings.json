@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home",
+  "info": {
+    "name": "homeInfos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image": {
+      "model": "images",
+      "via": "home_info"
+    }
+  }
+}
