@@ -30,14 +30,15 @@ module.exports = {
         return new Promise((resolve, reject) => {
           // write file in public/assets folder
           fs.writeFile(
-            path.join(uploadDir, `/uploads/${file.hash}${file.ext}`),
+            path.join(uploadDir, `/uploads/${file.name}`),
             file.buffer,
             err => {
               if (err) {
                 return reject(err);
               }
 
-              file.url = `/uploads/${file.hash}${file.ext}`;
+              file.url = `/uploads/${file.name}`;
+              file.caption = file.name.split('_')[0]
               resolve();
             }
           );
