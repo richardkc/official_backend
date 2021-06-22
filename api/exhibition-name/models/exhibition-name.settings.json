@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "home",
+  "collectionName": "exhibition_names",
   "info": {
-    "name": "homeInfos",
+    "name": "exhibitionName",
     "description": ""
   },
   "options": {
@@ -11,9 +11,8 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "image": {
-      "model": "images",
-      "via": "home_info"
+    "exhibitionPlaneName": {
+      "type": "richtext"
     }
   }
 }

@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/home-infos",
-      "handler": "home-infos.find",
+      "path": "/exhibitions",
+      "handler": "exhibition.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/home-infos/count",
-      "handler": "home-infos.count",
+      "path": "/exhibitions/count",
+      "handler": "exhibition.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/home-infos/:id",
-      "handler": "home-infos.findOne",
+      "path": "/exhibitions/:id",
+      "handler": "exhibition.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/home-infos",
-      "handler": "home-infos.create",
+      "path": "/exhibitions",
+      "handler": "exhibition.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/home-infos/:id",
-      "handler": "home-infos.update",
+      "path": "/exhibitions/:id",
+      "handler": "exhibition.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/home-infos/:id",
-      "handler": "home-infos.delete",
+      "path": "/exhibitions/:id",
+      "handler": "exhibition.delete",
       "config": {
         "policies": []
       }
